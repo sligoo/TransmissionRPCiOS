@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		99EED3481DD86D3B0034615F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EED3471DD86D3B0034615F /* AppDelegate.swift */; };
+		99EED34A1DD86D3B0034615F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EED3491DD86D3B0034615F /* ViewController.swift */; };
+		99EED34D1DD86D3B0034615F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99EED34B1DD86D3B0034615F /* Main.storyboard */; };
+		99EED3501DD86D3B0034615F /* TransmissionRemote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 99EED34E1DD86D3B0034615F /* TransmissionRemote.xcdatamodeld */; };
+		99EED3521DD86D3B0034615F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99EED3511DD86D3B0034615F /* Assets.xcassets */; };
+		99EED3551DD86D3B0034615F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99EED3531DD86D3B0034615F /* LaunchScreen.storyboard */; };
+		99EED3601DD86D3C0034615F /* TransmissionRemoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EED35F1DD86D3C0034615F /* TransmissionRemoteTests.swift */; };
+		99EED36B1DD86D3C0034615F /* TransmissionRemoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EED36A1DD86D3C0034615F /* TransmissionRemoteUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		99EED35C1DD86D3C0034615F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99EED33C1DD86D3B0034615F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99EED3431DD86D3B0034615F;
+			remoteInfo = TransmissionRemote;
+		};
+		99EED3671DD86D3C0034615F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99EED33C1DD86D3B0034615F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99EED3431DD86D3B0034615F;
+			remoteInfo = TransmissionRemote;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		99EED3441DD86D3B0034615F /* TransmissionRemote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransmissionRemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		99EED3471DD86D3B0034615F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		99EED3491DD86D3B0034615F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		99EED34C1DD86D3B0034615F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		99EED34F1DD86D3B0034615F /* TransmissionRemote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TransmissionRemote.xcdatamodel; sourceTree = "<group>"; };
+		99EED3511DD86D3B0034615F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		99EED3541DD86D3B0034615F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		99EED3561DD86D3B0034615F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99EED35B1DD86D3C0034615F /* TransmissionRemoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransmissionRemoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		99EED35F1DD86D3C0034615F /* TransmissionRemoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransmissionRemoteTests.swift; sourceTree = "<group>"; };
+		99EED3611DD86D3C0034615F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99EED3661DD86D3C0034615F /* TransmissionRemoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransmissionRemoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		99EED36A1DD86D3C0034615F /* TransmissionRemoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransmissionRemoteUITests.swift; sourceTree = "<group>"; };
+		99EED36C1DD86D3C0034615F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		99EED3411DD86D3B0034615F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99EED3581DD86D3C0034615F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99EED3631DD86D3C0034615F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		99EED33B1DD86D3B0034615F = {
+			isa = PBXGroup;
+			children = (
+				99EED3461DD86D3B0034615F /* TransmissionRemote */,
+				99EED35E1DD86D3C0034615F /* TransmissionRemoteTests */,
+				99EED3691DD86D3C0034615F /* TransmissionRemoteUITests */,
+				99EED3451DD86D3B0034615F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		99EED3451DD86D3B0034615F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99EED3441DD86D3B0034615F /* TransmissionRemote.app */,
+				99EED35B1DD86D3C0034615F /* TransmissionRemoteTests.xctest */,
+				99EED3661DD86D3C0034615F /* TransmissionRemoteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99EED3461DD86D3B0034615F /* TransmissionRemote */ = {
+			isa = PBXGroup;
+			children = (
+				99EED3471DD86D3B0034615F /* AppDelegate.swift */,
+				99EED3491DD86D3B0034615F /* ViewController.swift */,
+				99EED34B1DD86D3B0034615F /* Main.storyboard */,
+				99EED3511DD86D3B0034615F /* Assets.xcassets */,
+				99EED3531DD86D3B0034615F /* LaunchScreen.storyboard */,
+				99EED3561DD86D3B0034615F /* Info.plist */,
+				99EED34E1DD86D3B0034615F /* TransmissionRemote.xcdatamodeld */,
+			);
+			path = TransmissionRemote;
+			sourceTree = "<group>";
+		};
+		99EED35E1DD86D3C0034615F /* TransmissionRemoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				99EED35F1DD86D3C0034615F /* TransmissionRemoteTests.swift */,
+				99EED3611DD86D3C0034615F /* Info.plist */,
+			);
+			path = TransmissionRemoteTests;
+			sourceTree = "<group>";
+		};
+		99EED3691DD86D3C0034615F /* TransmissionRemoteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				99EED36A1DD86D3C0034615F /* TransmissionRemoteUITests.swift */,
+				99EED36C1DD86D3C0034615F /* Info.plist */,
+			);
+			path = TransmissionRemoteUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		99EED3431DD86D3B0034615F /* TransmissionRemote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99EED36F1DD86D3C0034615F /* Build configuration list for PBXNativeTarget "TransmissionRemote" */;
+			buildPhases = (
+				99EED3401DD86D3B0034615F /* Sources */,
+				99EED3411DD86D3B0034615F /* Frameworks */,
+				99EED3421DD86D3B0034615F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TransmissionRemote;
+			productName = TransmissionRemote;
+			productReference = 99EED3441DD86D3B0034615F /* TransmissionRemote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		99EED35A1DD86D3C0034615F /* TransmissionRemoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99EED3721DD86D3C0034615F /* Build configuration list for PBXNativeTarget "TransmissionRemoteTests" */;
+			buildPhases = (
+				99EED3571DD86D3C0034615F /* Sources */,
+				99EED3581DD86D3C0034615F /* Frameworks */,
+				99EED3591DD86D3C0034615F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99EED35D1DD86D3C0034615F /* PBXTargetDependency */,
+			);
+			name = TransmissionRemoteTests;
+			productName = TransmissionRemoteTests;
+			productReference = 99EED35B1DD86D3C0034615F /* TransmissionRemoteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		99EED3651DD86D3C0034615F /* TransmissionRemoteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99EED3751DD86D3C0034615F /* Build configuration list for PBXNativeTarget "TransmissionRemoteUITests" */;
+			buildPhases = (
+				99EED3621DD86D3C0034615F /* Sources */,
+				99EED3631DD86D3C0034615F /* Frameworks */,
+				99EED3641DD86D3C0034615F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99EED3681DD86D3C0034615F /* PBXTargetDependency */,
+			);
+			name = TransmissionRemoteUITests;
+			productName = TransmissionRemoteUITests;
+			productReference = 99EED3661DD86D3C0034615F /* TransmissionRemoteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		99EED33C1DD86D3B0034615F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Sacha Liguori";
+				TargetAttributes = {
+					99EED3431DD86D3B0034615F = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = MH3LT726JE;
+						ProvisioningStyle = Automatic;
+					};
+					99EED35A1DD86D3C0034615F = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = MH3LT726JE;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 99EED3431DD86D3B0034615F;
+					};
+					99EED3651DD86D3C0034615F = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = MH3LT726JE;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 99EED3431DD86D3B0034615F;
+					};
+				};
+			};
+			buildConfigurationList = 99EED33F1DD86D3B0034615F /* Build configuration list for PBXProject "TransmissionRemote" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 99EED33B1DD86D3B0034615F;
+			productRefGroup = 99EED3451DD86D3B0034615F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				99EED3431DD86D3B0034615F /* TransmissionRemote */,
+				99EED35A1DD86D3C0034615F /* TransmissionRemoteTests */,
+				99EED3651DD86D3C0034615F /* TransmissionRemoteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		99EED3421DD86D3B0034615F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99EED3551DD86D3B0034615F /* LaunchScreen.storyboard in Resources */,
+				99EED3521DD86D3B0034615F /* Assets.xcassets in Resources */,
+				99EED34D1DD86D3B0034615F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99EED3591DD86D3C0034615F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99EED3641DD86D3C0034615F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		99EED3401DD86D3B0034615F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99EED34A1DD86D3B0034615F /* ViewController.swift in Sources */,
+				99EED3481DD86D3B0034615F /* AppDelegate.swift in Sources */,
+				99EED3501DD86D3B0034615F /* TransmissionRemote.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99EED3571DD86D3C0034615F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99EED3601DD86D3C0034615F /* TransmissionRemoteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99EED3621DD86D3C0034615F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99EED36B1DD86D3C0034615F /* TransmissionRemoteUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		99EED35D1DD86D3C0034615F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99EED3431DD86D3B0034615F /* TransmissionRemote */;
+			targetProxy = 99EED35C1DD86D3C0034615F /* PBXContainerItemProxy */;
+		};
+		99EED3681DD86D3C0034615F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99EED3431DD86D3B0034615F /* TransmissionRemote */;
+			targetProxy = 99EED3671DD86D3C0034615F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		99EED34B1DD86D3B0034615F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99EED34C1DD86D3B0034615F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		99EED3531DD86D3B0034615F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99EED3541DD86D3B0034615F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		99EED36D1DD86D3C0034615F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		99EED36E1DD86D3C0034615F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		99EED3701DD86D3C0034615F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MH3LT726JE;
+				INFOPLIST_FILE = TransmissionRemote/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sligoo.TransmissionRemote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		99EED3711DD86D3C0034615F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MH3LT726JE;
+				INFOPLIST_FILE = TransmissionRemote/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sligoo.TransmissionRemote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		99EED3731DD86D3C0034615F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = MH3LT726JE;
+				INFOPLIST_FILE = TransmissionRemoteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sligoo.TransmissionRemoteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TransmissionRemote.app/TransmissionRemote";
+			};
+			name = Debug;
+		};
+		99EED3741DD86D3C0034615F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = MH3LT726JE;
+				INFOPLIST_FILE = TransmissionRemoteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sligoo.TransmissionRemoteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TransmissionRemote.app/TransmissionRemote";
+			};
+			name = Release;
+		};
+		99EED3761DD86D3C0034615F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = MH3LT726JE;
+				INFOPLIST_FILE = TransmissionRemoteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sligoo.TransmissionRemoteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TransmissionRemote;
+			};
+			name = Debug;
+		};
+		99EED3771DD86D3C0034615F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = MH3LT726JE;
+				INFOPLIST_FILE = TransmissionRemoteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sligoo.TransmissionRemoteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TransmissionRemote;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		99EED33F1DD86D3B0034615F /* Build configuration list for PBXProject "TransmissionRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99EED36D1DD86D3C0034615F /* Debug */,
+				99EED36E1DD86D3C0034615F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99EED36F1DD86D3C0034615F /* Build configuration list for PBXNativeTarget "TransmissionRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99EED3701DD86D3C0034615F /* Debug */,
+				99EED3711DD86D3C0034615F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		99EED3721DD86D3C0034615F /* Build configuration list for PBXNativeTarget "TransmissionRemoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99EED3731DD86D3C0034615F /* Debug */,
+				99EED3741DD86D3C0034615F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		99EED3751DD86D3C0034615F /* Build configuration list for PBXNativeTarget "TransmissionRemoteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99EED3761DD86D3C0034615F /* Debug */,
+				99EED3771DD86D3C0034615F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		99EED34E1DD86D3B0034615F /* TransmissionRemote.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				99EED34F1DD86D3B0034615F /* TransmissionRemote.xcdatamodel */,
+			);
+			currentVersion = 99EED34F1DD86D3B0034615F /* TransmissionRemote.xcdatamodel */;
+			path = TransmissionRemote.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 99EED33C1DD86D3B0034615F /* Project object */;
+}
