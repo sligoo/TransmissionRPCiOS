@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11756" systemVersion="16C48b" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11542" systemVersion="16B2555" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="File" representedClassName="File" syncable="YES" codeGenerationType="class">
         <attribute name="bytesCompleted" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="length" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
@@ -29,6 +29,7 @@
         <attribute name="progress" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="rateToClient" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="rateToPeer" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="peerFrom" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PeerFrom" syncable="YES"/>
     </entity>
     <entity name="PeerFrom" representedClassName="PeerFrom" syncable="YES" codeGenerationType="class">
         <attribute name="fromCache" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
@@ -72,14 +73,20 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="peerLimit" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="peersConnected" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="peersGettingFromUS" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="peersSendingToUs" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="percentDone" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="pieceCount" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="pieces" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pieceSize" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="files" optional="YES" toMany="YES" minCount="1" deletionRule="Cascade" destinationEntity="File" syncable="YES"/>
         <relationship name="peers" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Peer" syncable="YES"/>
     </entity>
     <elements>
-        <element name="File" positionX="10" positionY="10" width="128" height="240"/>
-        <element name="FileStat" positionX="10" positionY="10" width="128" height="240"/>
-        <element name="Peer" positionX="10" positionY="10" width="128" height="240"/>
-        <element name="PeerFrom" positionX="10" positionY="10" width="128" height="240"/>
-        <element name="Torrent" positionX="10" positionY="10" width="128" height="240"/>
+        <element name="File" positionX="178" positionY="648" width="128" height="240"/>
+        <element name="FileStat" positionX="412" positionY="561" width="128" height="240"/>
+        <element name="Peer" positionX="-36" positionY="72" width="128" height="298"/>
+        <element name="PeerFrom" positionX="439" positionY="180" width="128" height="240"/>
+        <element name="Torrent" positionX="-387" positionY="36" width="128" height="643"/>
     </elements>
 </model>
