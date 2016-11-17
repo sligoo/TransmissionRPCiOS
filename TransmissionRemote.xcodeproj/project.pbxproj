@@ -518,6 +518,7 @@
 				99EED3711DD86D3C0034615F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		99EED3721DD86D3C0034615F /* Build configuration list for PBXNativeTarget "TransmissionRemoteTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +527,7 @@
 				99EED3741DD86D3C0034615F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		99EED3751DD86D3C0034615F /* Build configuration list for PBXNativeTarget "TransmissionRemoteUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +536,7 @@
 				99EED3771DD86D3C0034615F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
