@@ -29,7 +29,6 @@
         <attribute name="progress" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="rateToClient" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="rateToPeer" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <relationship name="peerFrom" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PeerFrom" syncable="YES"/>
     </entity>
     <entity name="PeerFrom" representedClassName="PeerFrom" syncable="YES" codeGenerationType="class">
         <attribute name="fromCache" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
@@ -73,20 +72,52 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="peerLimit" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="peersConnected" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="peersGettingFromUs" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="peersGettingFromUS" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="peersSendingToUs" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="percentDone" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="pieceCount" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="pieces" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="pieceSize" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="queuePosition" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="rateDownload" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="rateUpload" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="torrentFile" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="totalSize" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="uploadEver" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="uploadLimit" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="uploadLimited" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="uploadRatio" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="files" optional="YES" toMany="YES" minCount="1" deletionRule="Cascade" destinationEntity="File" syncable="YES"/>
         <relationship name="peers" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Peer" syncable="YES"/>
+        <relationship name="peersFrom" maxCount="1" deletionRule="Deny" destinationEntity="PeerFrom" syncable="YES"/>
+        <relationship name="tracker" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Tracker" syncable="YES"/>
+    </entity>
+    <entity name="Tracker" representedClassName="Tracker" syncable="YES" codeGenerationType="class">
+        <attribute name="announce" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="scrape" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tier" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="trackerStat" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TrackerStat" syncable="YES"/>
+    </entity>
+    <entity name="TrackerStat" representedClassName="TrackerStat" syncable="YES" codeGenerationType="class">
+        <attribute name="announce" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="announceState" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="downloadCount" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="hasAnnounced" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="hasScraped" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="host" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
     <elements>
-        <element name="File" positionX="178" positionY="648" width="128" height="240"/>
+        <element name="File" positionX="178" positionY="648" width="128" height="105"/>
         <element name="FileStat" positionX="412" positionY="561" width="128" height="240"/>
-        <element name="Peer" positionX="-36" positionY="72" width="128" height="298"/>
-        <element name="PeerFrom" positionX="439" positionY="180" width="128" height="240"/>
-        <element name="Torrent" positionX="-387" positionY="36" width="128" height="643"/>
+        <element name="Peer" positionX="-36" positionY="72" width="128" height="285"/>
+        <element name="PeerFrom" positionX="439" positionY="180" width="128" height="150"/>
+        <element name="Torrent" positionX="-387" positionY="36" width="128" height="855"/>
+        <element name="Tracker" positionX="-171" positionY="198" width="128" height="120"/>
+        <element name="TrackerStat" positionX="-162" positionY="207" width="128" height="150"/>
     </elements>
 </model>
